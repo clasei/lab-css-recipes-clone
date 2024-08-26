@@ -30,7 +30,7 @@ body {
 
 header {
   background-image: url(/apple-pie/images/apple-pie.jpg);
-  background-size: 100%;
+  background-size: cover;
 }
 
 h1 {
