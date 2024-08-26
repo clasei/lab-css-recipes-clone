@@ -31,7 +31,6 @@ body {
 header {
   background-image: url(/apple-pie/images/apple-pie.jpg);
   background-size: 100%;
-  min-height: 100px;
 }
 
 h1 {
@@ -54,7 +53,7 @@ h1 {
 #image-info {
   text-align: center;
   padding: 15px;
-  max-width: 50%;
+  max-width: 250px;
 }
 
 hr {
@@ -75,3 +74,14 @@ ul {
   margin-left: 10px;
 }
 
+ol {
+  list-style: none;
+}
+
+ol > li {
+  counter-increment: listcounter;
+}
+
+ol > li::before {
+  content: counter(listcounter) ") ";
+}
